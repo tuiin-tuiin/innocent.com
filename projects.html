@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Twiin</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .projects-container {
+      padding: 2rem;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .project-card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .project-item {
+      width: 30%;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .project-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .project-item h3 {
+      margin: 1rem 0;
+      color: #333;
+    }
+    .project-item p {
+      padding: 0 1rem;
+      color: #666;
+    }
+    .project-item:hover {
+      transform: scale(1.05);
+    }
+    .recent-projects {
+      margin-top: 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .recent-projects .image-wrapper {
+      display: flex;
+      animation: slide-left 15s infinite linear;
+    }
+    .recent-projects .image-wrapper img {
+      width: 300px;
+      height: 200px;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+    .recent-projects .image-wrapper:hover {
+  animation-play-state: paused;
+}
+
+    @keyframes slide-left {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+  <div class="projects-container">
+    <h2>My Recent Projects</h2>
+
+    <!-- Project Display Section -->
+    <div class="project-card">
+      <div class="project-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Description of the project. This is a short and compelling text explaining what the project does.</p>
+        <a href="https://link-to-project1.com" target="_blank">View Project</a>
+      </div>
+      <div class="project-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Description of the project. This is a short and compelling text explaining what the project does.</p>
+        <a href="https://link-to-project2.com" target="_blank">View Project</a>
+      </div>
+      <div class="project-item">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project Title 3</h3>
+        <p>Description of the project. This is a short and compelling text explaining what the project does.</p>
+        <a href="https://link-to-project3.com" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Recent Projects Section -->
+    <div class="recent-projects">
+      <h3>Recent Work</h3>
+      <div class="image-wrapper">
+        <img src="project1.jpg" alt="Project 1">
+        <img src="project2.jpg" alt="Project 2">
+        <img src="project3.jpg" alt="Project 3">
+        <img src="project4.jpg" alt="Project 4">
+        <img src="project5.jpg" alt="Project 5">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
